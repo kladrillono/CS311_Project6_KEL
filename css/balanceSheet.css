@@ -1,0 +1,198 @@
+body{
+    background-color: lavenderblush;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header{
+    display: flex;
+    justify-content: flex-start;
+    background-color:palevioletred;
+    padding: 2px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: [col-start] 800px [line1] 700px [col-end] 200px;
+    grid-template-rows: [top-line] 80px [second-line] 180px [third-line] 100px [fourth-line] 100px [fifth-line] 40px [sixth-line] 40px [seventh-line] 40px [bottom-line] 40px;
+    align-items: center;
+}
+
+#assets{
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    grid-row-start: top-line;
+    grid-row-end: span second-line;
+    background-color: cornflowerblue;
+    padding-top: 20px;
+    padding-left: 2px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#liabilities{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    grid-row-start: top-line;
+    grid-row-end: span second-line;
+    background-color: cornflowerblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#currentAssets{
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    grid-row-start: second-line;
+    grid-row-end: span third-line;
+    padding-top: 5px;
+}
+
+#assetsInputList{
+    display: none;
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    padding-right: 10px;
+    text-align: end;
+}
+
+#addAssetsBtn{
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    text-align: center;
+}
+
+#propEquip{
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    grid-row-start: third-line;
+    grid-row-end: span fourth-line;
+}
+
+#propEquipInputList{
+    display: none;
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    padding-right: 10px;
+    text-align: end;
+}
+
+#addpropEquipBtn{
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    text-align: center;
+}
+
+#intangibles{
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    grid-row-start: fifth-line;
+    grid-row-end: span sixth-line;
+}
+
+#intangiblesInputList{
+    display: none;
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    padding-right: 10px;
+    text-align: end;
+}
+
+#addIntangiblesBtn{
+    grid-column-start: col-start;
+    grid-column-end: span line1;
+    text-align: center;
+}
+
+#currentLiabilities{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    grid-row-start: second-line;
+    grid-row-end: span third-line;
+}
+
+#currentLiabInputList{
+    display: none;
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    padding-right: 10px;
+    text-align: end;
+}
+
+#addCurrentLiabBtn{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    text-align: center;
+}
+
+#longTermLiab{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    grid-row-start: third-line;
+    grid-row-end: span fourth-line;
+}
+
+#longTermLiabInputList{
+    display: none;
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    padding-right: 10px;
+    text-align: end;
+}
+
+#addLongTermLiabBtn{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    text-align: center;
+}
+
+#totalPosition{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    grid-row-start: fourth-line;
+    grid-row-end: span fifth-line;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#calcPositionBtn{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    text-align: start;
+}
+
+#totalAssets{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    grid-row-start: fifth-line;
+    grid-row-end: span sixth-line;
+    font-weight: bold;
+    font-size: large;
+}
+
+#totalLiab{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    grid-row-start: sixth-line;
+    grid-row-end: span seventh-line;
+    font-weight: bold;
+    font-size: large;
+}
+
+#position{
+    grid-column-start: line1;
+    grid-column-end: span col-end;
+    grid-row-start: seventh-line;
+    grid-row-end: span bottom-line;
+    font-weight: bold;
+    font-size: large;
+}
+
+#footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: palevioletred;
+    padding-left: 5px;
+}

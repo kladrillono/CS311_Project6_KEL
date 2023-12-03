@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Balance Sheet Calculator</title>
+        <link rel="stylesheet" href="css/balanceSheet.css"/>
+    </head>
+    <body>
+
+        <div id="header">
+            <h1>Bellarmine Financials - Balance Sheet Calculator</h1>
+        </div>
+
+        <div id="container">
+            
+            <div id="assets">
+                Assets
+            </div>
+
+            <div id="liabilities">
+                Liabilities
+            </div>
+            
+            <div id="currentAssets">
+                Current Assets<br>
+
+                <div id="assetsInputList">
+                    Cash: 
+                    <input type="text" id="cashInput"><br>
+                    Inventory: 
+                    <input type="text" id="inventoryInput"><br>
+                    Supplies: 
+                    <input type="text" id="suppliesInput"><br>
+                    Temporary Investments: 
+                    <input type="text" id="tempInvestmentsInput"><br>
+                    <div id="totalCurrentAssets">
+                        Total Current Assets: 
+                    </div>
+                </div>
+                <br>
+                
+                <div id="addAssetsBtn">
+                    <button id="assetsBtn" onclick="showAssetsList()">Add Current Assets</button>
+                </div>
+
+            </div>
+
+            <div id="propEquip">
+                Investment Property & Equipment<br>
+
+                <div id="propEquipInputList">
+                    Land: 
+                    <input type="text" id="landInput"><br>
+                    Building and Improvements: 
+                    <input type="text" id="buildingInput"><br>
+                    Equipment: 
+                    <input type="text" id="equipmentInput"><br>
+                    Temporary Investments: 
+                    <input type="text" id="tempPropInvestmentsInput"><br>
+                    <div id="totalPropEquip">
+                        Total Investment Property and Equipment: 
+                    </div>
+                </div>
+                <br>
+                
+                <div id="addpropEquipBtn">
+                    <button id="propEquipBtn" onclick="showPropEquipList()">Add Investment Property & Equipment</button>
+                </div> 
+            </div>
+
+            <div id="intangibles">
+                Intangibles<br>
+
+                <div id="intangiblesInputList">
+                    Trade Names: 
+                    <input type="text" id="tradeNamesInput"><br>
+                    Goodwill: 
+                    <input type="text" id="goodwillInput"><br>
+                    <div id="totalIntangibles">
+                        Total Intangibles: 
+                    </div>
+                </div>
+                <br>
+
+                <div id="addIntangiblesBtn">
+                    <button id="intangiblesBtn" onclick="showIntangiblesList()">Add Intangibles</button>
+                </div> 
+            </div>
+
+            <div id="currentLiabilities">
+                Current Liabilities<br>
+
+                <div id="currentLiabInputList">
+                    Accounts Payable: 
+                    <input type="text" id="accountsInput"><br>
+                    Notes Payable: 
+                    <input type="text" id="notesInput"><br>
+                    Interest Payable: 
+                    <input type="text" id="interestInput"><br>
+                    Wages Payable: 
+                    <input type="text" id="wagesInput"><br>
+                    Accrued Expenses: 
+                    <input type="text" id="expensesInput"><br>
+                    <div id="totalCurrentLiab">
+                        Total Current Liabilities: 
+                    </div>
+                </div>
+                <br>
+
+                <div id="addCurrentLiabBtn">
+                    <button id="currentLiabBtn" onclick="showCurrentLiabInputList()">Add Current Liabilities</button>
+                </div>
+            </div>
+
+            <div id="longTermLiab">
+                Long-Term Liabilities<br>
+
+                <div id="longTermLiabInputList">
+                    Notes Payable: 
+                    <input type="text" id="longTermNotesInput"><br>
+                    Bonds Payable: 
+                    <input type="text" id="bondsInput"><br>
+                    <div id="totalLongTermLiab">
+                        Total Long-Term Liabilities: 
+                    </div>
+                </div>
+                <br>
+
+                <div id="addLongTermLiabBtn">
+                    <button id="longTermLiabBtn" onclick="showLongTermLiabInputList()">Add Long-Term Liabilities</button>
+                </div>
+            </div>
+
+            <div id="totalPosition">
+                Total Position<br>
+                <div id="totalPositionBtn">
+                    <button id="calcPositionBtn" onclick="calculateTotals()">Calculate Position</button>
+                </div>
+            </div>
+            
+            <div id="totalAssets">
+                Total Assets:
+            </div>
+
+            <div id="totalLiab">
+                Total Liabilities:
+            </div>
+            
+            <div id="position">
+                Position:
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <h5>Bellarmine University 2023</h5>
+        </div>
+
+
+
+
+        <script src="js/balanceSheetProperties.js"></script>
+    </body>
+
+
+</html>
